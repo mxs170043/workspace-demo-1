@@ -29,10 +29,10 @@ resource "aws_instance" "ubuntu" {
     Name = var.instance_name
   }
 }
-resource "aws_s3_bucket" "terraform_state" {
-  bucket = "tfstate"
+# resource "aws_s3_bucket" "terraform_state" {
+#   bucket = "tfstate"
      
-  lifecycle {
-    prevent_destroy = true
-  }
-}
+#   lifecycle {
+#     prevent_destroy = true
+#   }
+# }
