@@ -7,7 +7,7 @@ terraform {
     organization = "hashicorp-trainingqwr"
 
     workspaces {
-      name = "workspace-demo-2"
+      name = "workspace-demo-1"
     }
   }
 
