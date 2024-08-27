@@ -2,14 +2,22 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
-
-  cloud {
-    organization = "organization-name"
+  backend "remote"{
+    hostname ="app.terraform.io"
+    organization = "hashicorp-trainingqwr"
 
     workspaces {
-      name = "learn-terraform"
+      name = "workspace-demo-1"
     }
   }
+
+  # cloud {
+  #   organization = "hashicorp-trainingqwr"
+
+  #   workspaces {
+  #     name = "terraform-workspace"
+  #   }
+  # }
 
   required_providers {
     aws = {
