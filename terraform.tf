@@ -1,11 +1,4 @@
 terraform {
-  # backend "remote"{
-  #   hostname ="app.terraform.io"
-  #   organization = "hashicorp-trainingqwr"
-
-  #   workspaces {
-  #     name = "workspace-demo-1"
-  #   }
    cloud {
     organization = "hashicorp-trainingqwr"
 
